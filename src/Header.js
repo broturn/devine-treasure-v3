@@ -3,7 +3,7 @@ import logo from "./images/logo1.png";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
-// import { auth } from "./firebase";
+import { auth } from "./firebase";
 
 
 function Header() {
