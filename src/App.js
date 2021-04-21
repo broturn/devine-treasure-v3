@@ -7,10 +7,10 @@ import Orders from "./Orders";
 import Login from "./Login";
 import Payment from "./Payment";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import { auth } from './firebase';
+import { auth } from './firebase';
 import { useStateValue } from "./StateProvider";
-// import { loadStripe } from '@stripe/stripe-js';
-// import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
 function App() {
   return (
     <Router>
@@ -30,9 +30,9 @@ function App() {
           
           <Route path="/payment">
             <Header />
-            <Elements stripe={promise}>
+            {/* <Elements stripe={promise}> */}
             <Payment />
-            </Elements>
+            {/* </Elements> */}
           </Route>
           <Route path="/">
             <Header />

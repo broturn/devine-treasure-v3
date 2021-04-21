@@ -18,5 +18,3 @@ const firebaseConfig = {
   const auth = firebase.auth();
 
   export { db, auth };
-  // 2:38:31 day 3
-  // 1:25:14 day 4
