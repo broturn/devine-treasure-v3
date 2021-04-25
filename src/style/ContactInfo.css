@@ -1,0 +1,19 @@
+.contactInfo {
+    font-size: 10px;
+}
+.contactInfo__container{
+    display: flex;
+    padding: 50px;
+}
+.contactInfo__inputs{
+    display: flex;
+}
+.contactInfo__inputs-fname{
+display: flex;
+height: 42px;
+width: 182px;
+left: 240px;
+top: 298px;
+border-radius: nullpx;
+
+}

@@ -12,6 +12,7 @@
 @import 'Subtotal';
 @import 'Checkout.css';
 @import 'CheckoutProduct.css';
+@import 'ContactInfo.css';
 
 html {
   background-color: #504c65;
