@@ -33,6 +33,7 @@ function ContactInfo() {
         <h1>Zip code</h1>
         <input type="text" />
         </div>
+        <button type='submit' className='contactInfo__submitInfoButton' >Submit Contact Information</button>
         </form>
         </div>
       </div>
