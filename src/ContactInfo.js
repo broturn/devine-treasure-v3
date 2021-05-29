@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import logo from "./images/logo1.png";
+import axios from './axios';
+import { db } from "./firebase";
+
 function ContactInfo() {
+  
+  const [error, setError] = useState(null);
+  const [processing, setProcessing] = useState("");
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setProcessing(true);
+        db.collection('users')
+    //     .doc(user?.uid)
+    //     .collection('orders')
+    //     .doc(paymentIntent.id)
+    //     })
+      }
   return (
     <div className="contactInfo">
       <Link to="/">
@@ -33,7 +48,7 @@ function ContactInfo() {
         <h1>Zip code</h1>
         <input type="text" />
         </div>
-        <button type='submit' className='contactInfo__submitInfoButton' >Submit Contact Information</button>
+        <button type='submit' onSubmit={handleSubmit} className='contactInfo__submitInfoButton' >Submit Contact Information</button>
         </form>
         </div>
       </div>
